@@ -27,7 +27,7 @@ import Checkbox from "primevue/checkbox";
           </div>
           <div class="w-full flex items-center gap-5 border mb-5">
             <Checkbox id="xxx" name="xxx" size="large" class="text-2xl" v-model="checked" binary />
-            <p>註冊即表示您已閱讀、了解並同意以上條款內容。</p>
+            <p>註冊即表示您已同意</p>
           </div>
           <div class="member-menu w-[100%] flex gap-5 justify-center item-center p-5">
             <router-link class="login text-xl p-5" to="/login">註冊</router-link>

@@ -2,12 +2,12 @@ import { createRouter, createWebHashHistory } from "vue-router";
 
 const routes = [
   {
-    path: "/",
+    path: "/form",
     name: "Form",
     component: () => import("../page/Form.vue"),
   },
   {
-    path: "/index",
+    path: "/",
     name: "IndexHome",
     component: () => import("../page/Index.vue"),
   },
@@ -20,6 +20,11 @@ const routes = [
     path: "/register",
     name: "Register",
     component: () => import("../page/Register.vue")
+  },
+  {
+    path: "/test",
+    name: "Register",
+    component: () => import("../page/test.vue")
   },
 
 ];

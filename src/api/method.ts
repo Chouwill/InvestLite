@@ -7,3 +7,13 @@ export function getUser(params: object) {
     params,
   });
 }
+
+
+
+export function getCardList(params: object) {
+  return apiClient({
+    url: `/api/get/data/economy`,
+    method: "get",
+    params,
+  });
+}
