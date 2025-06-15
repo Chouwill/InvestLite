@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@import "tailwindcss-primeui";
+
+body {
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+* {
+  box-sizing: border-box;
+  border: none;
+}
+
+/* .formContainer {
+  border: 10px solid rgb(17, 138, 27);
+  border-radius: 20px;
+  background: rgba(165, 9, 9, 0.35);
+} */
+
+.p-tabpanels {
+  /* background: none; */
+}
+.bundaryBox {
+  background: rgba(255, 255, 255, 0.35) !important;
+  border: 5px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* .p-tabpanels */
+
+.p-tab-active {
+  border: 7px solid #000 !important;
+}
+
+
+
+
+.member-menu a {
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member-menu .login {
+  background: #5b86e5;
+  color: white;
+}
+
+.member-menu .login:hover {
+  background: #477ad8;
+}
+
+.member-menu .signup {
+  background: white;
+  color: #5b86e5;
+  border: 2px solid #5b86e5;
+}
+
+.member-menu .signup:hover {
+  background: #eaf1fd;
+}
+
+
