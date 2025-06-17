@@ -26,7 +26,7 @@ import Checkbox from "primevue/checkbox";
             <InputText class="w-full" type="text" />
           </div>
           <div class="member-menu w-[100%] flex gap-5 justify-center item-center p-5">
-            <router-link class="login text-xl p-5" to="/login">註冊</router-link>
+            <router-link class="login bg-[#5b86e5] text-white py-2 px-4 text-base rounded-lg shadow-md" to="/login">註冊</router-link>
           </div>
         </div>
       </div>
