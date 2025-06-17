@@ -1,4 +1,4 @@
-<script setup>
+<script lang="ts" setup>
 import router from "../router";
 import InputText from "primevue/inputtext";
 import Select from "primevue/select";
@@ -15,9 +15,22 @@ import Tab from "primevue/tab";
 import TabPanels from "primevue/tabpanels";
 import TabPanel from "primevue/tabpanel";
 
+import { useUserStore } from "../store/user";
+import { Password } from "primevue";
+
+const onLoginForm = ref({
+  email: "",
+  password: "",
+});
+
+const store = useUserStore();
+
 const onLogin = () => {
-  console.log("4444");
-  router.push({ name: "MemberCenter" });
+  console.log("4444", onLoginForm.value);
+  // router.push({ name: "MemberCenter" });
+
+  store.handleLogin(onLoginForm.value);
+  // console.log(store.isloginStatus);
 };
 </script>
 
@@ -33,15 +46,17 @@ const onLogin = () => {
         <div class="w-full flex flex-col">
           <div class="w-full border mb-5">
             <label class="" id="" for="name">帳號</label>
-            <InputText class="w-full" type="text" />
+            <InputText v-model="onLoginForm.email" class="w-full" type="text" />
           </div>
           <div class="w-full border mb-5">
             <label class="" for="name">密碼</label>
-            <InputText class="w-full" type="text" />
+            <InputText v-model="onLoginForm.password" class="w-full" type="text" />
           </div>
           <div class="member-menu w-[100%] flex gap-5 justify-center item-center p-5">
             <Button @click="onLogin">
-              <router-link class="login bg-[#5b86e5] text-white py-2 px-4 text-base rounded-lg shadow-md" to="/login">登入</router-link>
+              <router-link class="login bg-[#5b86e5] text-white py-2 px-4 text-base rounded-lg shadow-md" to="/login">
+                登入
+              </router-link>
             </Button>
           </div>
         </div>
