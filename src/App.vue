@@ -18,9 +18,9 @@ console.log(sayHello(user));
     </div>
   </div>
 
-  <div class="container bg-red-100">
+  <!-- <div class="container bg-red-100">
     <div class="w-3xs bg-blue-300">w-3xs 卡片</div>
-  </div>
+  </div> -->
 </template>
 
 <style lang="scss"></style>

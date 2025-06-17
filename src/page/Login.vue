@@ -19,11 +19,10 @@ import TabPanel from "primevue/tabpanel";
   <!-- <div class="bg-green-500 md:bg-red-900 text-white p-4 text-center mt-5">
     ✅ Tailwind md:bg-red-900 測試元件（請把畫面拉到 ≥768px 看它會不會變紅）
   </div> -->
-  <div class="flex flex-col rounded-xl md:w-full items-center justify-center border border-green-700 ">
+  <div class="w-full flex flex-col rounded-xl md:w-full items-center justify-center border border-green-700">
     <h2 class="border text-center text-3xl">股票買賣紀錄</h2>
 
-    <form
-      class="formContainer size-auto flex flex-col items-center justify-center gap-5 m-4 ">
+    <form class="formContainer border w-full max-w-xs  flex flex-col items-center justify-center gap-5 m-4 md:max-w-md">
       <div class="bundaryBox w-[95%] border p-10 rounded-4xl">
         <div class="w-full flex flex-col">
           <div class="w-full border mb-5">
@@ -42,16 +41,10 @@ import TabPanel from "primevue/tabpanel";
     </form>
   </div>
 
-
-
   <!-- 📌 測試色塊，確認 md: 斷點有生效 -->
   <div class="bg-green-500 md:bg-orange-900 text-white p-4 text-center mt-5">
     ✅ Tailwind md:bg-red-900 測試元件（請把畫面拉到 ≥768px 看它會不會變紅）
   </div>
-
-
-
-
 </template>
 
 <style scoped></style>
