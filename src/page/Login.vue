@@ -27,7 +27,7 @@ const store = useUserStore();
 
 const onLogin = () => {
   console.log("4444", onLoginForm.value);
-  // router.push({ name: "MemberCenter" });
+  router.push({ name: "MemberCenter" });
 
   store.handleLogin(onLoginForm.value);
   // console.log(store.isloginStatus);
